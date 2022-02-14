@@ -5,7 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 var belvo = require('belvo').default;
-const APP_PORT =process.env.PORT;
+const APP_PORT =process.env.PORT || 3001;
 
 const corsOptions ={
   origin:'*', 
@@ -21,15 +21,15 @@ var client = new belvo(
 
 const widget = {
   branding: {
-    company_icon: "https://mysite.com/icon.svg",
-    company_logo: "https://mysite.com/logo.svg",
-    company_name: "ACME",
+    company_name: "Saldada",
     company_benefit_header: "Faster approvals",
     company_benefit_content: "Using Belvo cuts down on your loan approval time by up to 15 days.",
     opportunity_loss: "It can take up to 20 days to evaluate your request using traditional methods."
       
   }
 }
+
+const options = {scopes: 'read_institutions,write_links,read_links', widget: widget};
 
 const app = express();
 
@@ -42,13 +42,14 @@ app.use(bodyParser.json());
 app.use(cors(corsOptions));
 
 app.get('/api/', (req, res,)=>{
-  return res.json("This is a value")
+  return res.json("Testing deployment")
 });
 
 app.get('/api/auth', (req, res,)=>{
+  console.log("Pinged")
   return client.connect()
   .then(function () {
-        client.widgetToken.create()
+        client.widgetToken.create(options)
       .then((response) => {
       res.json(response);
         })
