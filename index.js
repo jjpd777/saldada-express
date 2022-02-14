@@ -21,6 +21,7 @@ var client = new belvo(
 
 const widget = {
   branding: {
+    company_icon: "https://dd7tel2830j4w.cloudfront.net/f1644844083872x660583407792153500/saldada-color-icon.svg",
     company_name: "Saldada",
     company_benefit_header: "Faster approvals",
     company_benefit_content: "Using Belvo cuts down on your loan approval time by up to 15 days.",
