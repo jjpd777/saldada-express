@@ -5,7 +5,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 var belvo = require('belvo').default;
-const APP_PORT =3001;
+const APP_PORT =process.env.PORT;
 
 const corsOptions ={
   origin:'*', 
