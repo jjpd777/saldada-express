@@ -23,9 +23,9 @@ const widget = {
   branding: {
     company_icon: "https://dd7tel2830j4w.cloudfront.net/f1644844083872x660583407792153500/saldada-color-icon.svg",
     company_name: "Saldada",
-    company_benefit_header: "Faster approvals",
-    company_benefit_content: "Using Belvo cuts down on your loan approval time by up to 15 days.",
-    opportunity_loss: "It can take up to 20 days to evaluate your request using traditional methods."
+    company_benefit_header: "Cuentas claras, amistades largas",
+    company_benefit_content: "Saldada usa Belvo para evaluar tu crédito en segundos.",
+    opportunity_loss: "Estas en buenas manos."
       
   }
 }
