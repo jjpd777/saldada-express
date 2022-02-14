@@ -23,8 +23,8 @@ const widget = {
   branding: {
     company_icon: "https://dd7tel2830j4w.cloudfront.net/f1644844083872x660583407792153500/saldada-color-icon.svg",
     company_name: "Saldada",
-    company_benefit_header: "Cuentas claras, amistades largas",
-    company_benefit_content: "Saldada usa Belvo para evaluar tu crédito en segundos.",
+    company_benefit_header: "Saldada cuotas",
+    company_benefit_content: "Cuentas claras, amistades largas",
     opportunity_loss: "Estas en buenas manos."
       
   }
