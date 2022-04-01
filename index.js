@@ -63,6 +63,12 @@ app.get('/api/auth', (req, res,)=>{
 });
 
 
+app.get('/whatsApp', (req, res,)=>{
+  console.log(req);
+  return res.send({response: "Fucking legend"})
+});
+
+
 
 app.listen(APP_PORT, function () {
   console.log('plaid-quickstart server listening on port ' + APP_PORT);
